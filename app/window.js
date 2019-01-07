@@ -14,7 +14,6 @@ module.exports = function createMainWindow (handleResize, handleClosed) {
     height: lastWindowState.height,
     icon: join(__dirname, '../build/icon.png'),
     title: 'Keep',
-    titleBarStyle: 'hiddenInset',
     webPreferences: {
       preload: `${__dirname}/browser.js`
     }
